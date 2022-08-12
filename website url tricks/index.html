@@ -1,0 +1,86 @@
+<style>
+
+
+    .qodef-m-filter-items a {
+        min-width: 200px !important;
+        height: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: rgba(139, 138, 138, 0.904);
+        text-align: center;
+        padding: 15px 20px;
+        border-radius: 40px;
+        line-height: 50px !important;
+        margin-left: 20px !important;
+    
+    }
+    .qodef-m-filter-items a:nth-child(1){
+            background: url(https://www.starman.agency/wp-content/uploads/2022/08/Vol.2_01-1.jpg) center !important;
+    }
+    .qodef-m-filter-items a:nth-child(2){
+            background: url(https://www.starman.agency/wp-content/uploads/2022/08/Vol.2_02-1.jpg) center !important;
+    }
+    .qodef-m-filter-items a:nth-child(3){
+            background: url(https://www.starman.agency/wp-content/uploads/2022/08/Vol.2_03-1.jpg) center !important;
+    }
+    .qodef-m-filter-items a:nth-child(4){
+            background: url(https://www.starman.agency/wp-content/uploads/2022/07/2_02.jpg) center !important;
+    }
+    .qodef-m-filter-items a:nth-child(5){
+            background: url(https://www.starman.agency/wp-content/uploads/2022/07/2_01.jpg) center !important;
+    }
+
+    
+    .qodef-m-filter .qodef-m-filter-item:after{display:none;}
+    .qodef-m-filter-items {filter: brightness(0.9) !important;}
+    .qodef-m-filter-item:hover{filter: brightness(1.5) !important;}
+    .qodef--active {filter: brightness(1.5) !important; text-decoration: underline !important;}
+    
+    
+    
+    /*.qodef-e-content-inner {*/
+    /*  background: url('https://www.starman.agency/wp-content/uploads/2022/07/Vol.1_04.jpg') center;*/
+    /*    background-size: cover;*/
+    /*    background-repeat: no-repeat;*/
+    /*}*/
+    
+    .qodef-e-content-inner{
+       
+        padding: 20px !important;
+        height: 200px !important;
+    }
+    .opacity-error *{
+         opacity: 1 !important;
+    }
+    
+    
+    </style>
+    
+    
+    <script>
+    onload = (event) => { 
+        var url = window.location.hash.split("#")[1]
+        console.log(url)
+        if(url == "branding") {
+            document.querySelector(".qodef-m-filter-items a:nth-child(1)").click()
+        }
+
+        if(url == "logo") {
+            document.querySelector(".qodef-m-filter-items a:nth-child(2)").click()
+        }
+        if(url == "social") {
+            document.querySelector(".qodef-m-filter-items a:nth-child(3)").click()
+        }
+        if(url == "web") {
+            document.querySelector(".qodef-m-filter-items a:nth-child(4)").click()
+        }
+    }
+
+    </script>
+    
+
+    <script>
+        document.querySelectorAll("h4.info-box-title.title.box-title-style-default.wd-fontsize-xl").forEach(function(element){
+            element.remove()
+        })
+    </script>
