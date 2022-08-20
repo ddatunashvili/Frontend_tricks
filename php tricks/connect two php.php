@@ -1,6 +1,7 @@
 
-<? php
-include 'file_1.php';
+<? php 
+require 'file_1.php';
 
+echo "sheet";
 
 ?>
